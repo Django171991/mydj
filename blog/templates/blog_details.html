@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ post_list.title }} {% endblock %}
+
+{% block content %}
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="card m-1 p-3">
+		  <h4>{{ post_list.title }}</h4>
+		  <p>{{ post_list.date }}</p>
+		  <img src="/media/{{ post_list.image}}" alt="connect">
+		  <p>{{ post_list.description }}...</p>
+		</div>
+	</div>	
+</div>
+
+{% endblock %}
+ 
